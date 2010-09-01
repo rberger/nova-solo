@@ -8,7 +8,7 @@ This project inspired and partly derived from Cloudscaling's "swift-solo":http:/
 
 h2. Notes
 
-I have installed this inside a Ubuntu 10.04 virtual machine. You can read how to configure you "Ubuntu laptop to run KVM":http://vuksan.com/blog/2010/03/11/building-redhat-centos-kvm-images/. Most pieces install and run however things are not working quite right yet ie. you can upload images into a bucket but can't register them. Granted packages that are used are a bit old (early July). I will try to build my own packages shortly. This is work in progress.
+I have installed this inside a Ubuntu 10.04 virtual machine. You can read how to configure your "Ubuntu laptop to run KVM":http://vuksan.com/blog/2010/03/11/building-redhat-centos-kvm-images/. Most Nova pieces install and run however things are not working quite right yet ie. you can upload images into a bucket but can't register them. Also Object Server crashes when run as a daemon yet works when it's running in the foreground. Granted packages that are used are a bit old (early July). I will try to build my own packages shortly. Hopefully this fixes some of the issues. This is work in progress.
 
 h2. Setup
 
