@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SCRIPT_DIR=`dirname $0`
+
+chef-solo -c $SCRIPT_DIR/chef/chef-solo.rb -j $SCRIPT_DIR/chef/nova.json

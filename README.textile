@@ -1,0 +1,43 @@
+h2. nova-solo
+
+nova-solo is an automated way to get a working "Openstack Nova":http://nova.openstack.org development setup working on a single machine, quickly, using "Chef.":http://wiki.opscode.com/display/chef/Home
+
+h2. Acknowledgements
+
+This project inspired and partly derived from Cloudscaling's "swift-solo":http://github.com/cloudscaling/swift-solo.
+Also thanks go to "Krzysztof Wilczynski":http://twitter.com/kwilczynski for his help with obscure apt-get/dpkg
+options.
+
+h2. Notes
+
+I have installed this inside a Ubuntu 10.04 virtual machine. Most pieces install and run however things are not
+working quite right yet ie. you can upload images into a bucket but can't register them. Granted packages that are
+used are a bit old (early July). I will be trying newer packages shortly. This is work in progress.
+
+h2. Setup
+
+* Ubuntu 10.04 (others may work)
+* Chef 0.9.X - Please read "Add the Opscode APT Repository":http://wiki.opscode.com/display/chef/Package+Installation+on+Debian+and+Ubuntu
+* Git (apt-get install git-core)
+
+h2. Execution
+
+The *nova-install* script will start chef-solo. Currently this relies on "Soren Hansen":https://wiki.ubuntu.com/SorenHansen Launchpad repository ie. most of the packages are downloaded from Launchpad e.g. nova-compute, nova-api etc.
+
+
+h2. Overview
+
+More later ....
+
+h2. Chef Recipes
+
+chef-solo does the heavy lifting. 
+
+*nova::default:*
+setup the base environment
+
+h2. License
+
+Apache 2
+
+Copyright 2010, Vladimir Vuksan
