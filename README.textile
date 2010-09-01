@@ -4,15 +4,11 @@ nova-solo is an automated way to get a working "Openstack Nova":http://nova.open
 
 h2. Acknowledgements
 
-This project inspired and partly derived from Cloudscaling's "swift-solo":http://github.com/cloudscaling/swift-solo.
-Also thanks go to "Krzysztof Wilczynski":http://twitter.com/kwilczynski for his help with obscure apt-get/dpkg
-options.
+This project inspired and partly derived from Cloudscaling's "swift-solo":http://github.com/cloudscaling/swift-solo.Also thanks go to "Krzysztof Wilczynski":http://twitter.com/kwilczynski for his help with obscure apt-get/dpkg options.
 
 h2. Notes
 
-I have installed this inside a Ubuntu 10.04 virtual machine. Most pieces install and run however things are not
-working quite right yet ie. you can upload images into a bucket but can't register them. Granted packages that are
-used are a bit old (early July). I will be trying newer packages shortly. This is work in progress.
+I have installed this inside a Ubuntu 10.04 virtual machine. You can read how to configure you "Ubuntu laptop to run KVM":http://vuksan.com/blog/2010/03/11/building-redhat-centos-kvm-images/. Most pieces install and run however things are not working quite right yet ie. you can upload images into a bucket but can't register them. Granted packages that are used are a bit old (early July). I will try to build my own packages shortly. This is work in progress.
 
 h2. Setup
 
