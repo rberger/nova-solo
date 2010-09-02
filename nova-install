@@ -3,3 +3,8 @@
 SCRIPT_DIR=`dirname $0`
 
 chef-solo -c $SCRIPT_DIR/chef/chef-solo.rb -j $SCRIPT_DIR/chef/nova.json
+
+# Latest nova-common screws up sudo. I haven't decided how I want to fix it yet 
+# For the time being I will simply delete any includedir commands from /etc/sudoers
+# Annoying
+sed -i "/includedir/d" /etc/sudoers

@@ -33,7 +33,7 @@ end
 
 
 # Install common Nova packages
-%w{python-mox screen euca2ools unzip parted python-setuptools python-dev python-pycurl python-m2crypto strace}.each do |pkg_name|
+%w{python-mox screen python-libxml2 python-ldap euca2ools unzip parted python-setuptools python-dev python-pycurl python-m2crypto strace}.each do |pkg_name|
   package pkg_name
 end
 
@@ -46,4 +46,5 @@ include_recipe "nova::controller"
 include_recipe "nova::objectstore"
 include_recipe "nova::api"
 include_recipe "nova::volumestore"
+include_recipe "nova::network"
 include_recipe "nova::compute"
