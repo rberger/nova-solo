@@ -7,8 +7,9 @@
   package pkg_name
 end
 
-service "nova-objectstore" do
-  supports :status => true, :restart => true
-  action [ :enable, :start ]
-  running true
-end
+# With 0.9.1 packages this doesn't work properly. Commenting out for now
+#service "nova-objectstore" do
+#  supports :status => true, :restart => true
+#  action [ :enable, :start ]
+#  running true
+#end
